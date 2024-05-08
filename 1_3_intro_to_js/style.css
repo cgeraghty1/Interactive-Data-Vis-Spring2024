@@ -1,23 +1,35 @@
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
-  padding: 1em;
+  font-family: 'Avenir Next', Arial, sans-serif; /* Fallback to Arial if Avenir Next isn't available */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  color: navy; 
+  background: white; 
 }
 
-h1 {
-  font-size: 3em;
+#mainTitle, #subTitle {
+  font-size: 24px; 
+  margin-bottom: 10px;
 }
 
-h3 {
-  font-size: 2em;
-  margin: 0.25em 0;
+button {
+  padding: 10px 20px;
+  font-size: 18px; 
+  cursor: pointer;
+  background-color: pink; 
+  border: none; 
+  color: white; 
+  border-radius: 5px; 
+  margin-top: 20px;
 }
 
-p {
-  font-family: serif;
-  font-size: 1em;
+#counterDisplay {
+  font-size: 26px; /* Larger font size for the counter display */
+  margin-top: 20px;
 }
 
-section {
-  padding: 2em 0;
-}
