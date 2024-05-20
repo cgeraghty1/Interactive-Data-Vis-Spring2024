@@ -1,4 +1,4 @@
-/* CONSTANTS AND GLOBALS */
+t /* CONSTANTS AND GLOBALS */
 const width = window.innerWidth * 0.9,
       height = window.innerHeight * 0.9,
       margin = { top: 20, bottom: 60, left: 60, right: 40 };
@@ -24,7 +24,7 @@ d3.csv("MoMA_distributions.csv", d => ({
   // Parse strings to numbers where necessary
   length: +d["Length (cm)"],
   width: +d["Width (cm)"],
-  lifespan: +d["Artist Lifespan"], // Assuming "Artist Lifespan" is a column in your CSV
+  lifespan: +d["Artist Lifespan"], 
   artist: d.Artist, // You can add other data fields you need here
 })).then(rawData => {
   // Filter out records with no lifespan, lifespans over 100, and then reduce to one entry per artist
